@@ -1,6 +1,5 @@
 <template>
-    <div class="vue-tempalte">
-        <form>
+    <div>
             <h1>LogIn</h1>
             <div class="mb-3">
                 <label>Email address</label>
@@ -12,11 +11,12 @@
             </div>
             <button type="submit" class="btn btn-dark btn-lg btn-block">LogIn</button>
             <p class="forgot-password text-right mt-2 mb-4">
-                <router-link to="/forgot-password">Forgot password ?</router-link>
+                <router-link to="/">Forgot password ?</router-link>
             </p>
             <div class="social-icons">
                 
             </div>
-        </form>
+       
     </div>
 </template>
+<script src="../loginexcersice/LoginExcersice.js"></script>
