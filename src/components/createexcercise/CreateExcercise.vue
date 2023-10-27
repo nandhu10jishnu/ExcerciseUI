@@ -2,13 +2,11 @@
   <div class="center-container">
     <div class="container">
       <div class="col-4">
-        <input type="text" class="form-control" placeholder="City" />
+        <input type="text" class="form-control" placeholder="UserName" v-model="createUser.username" maxlength="50"/>
       </div>
+     
       <div class="col-4">
-        <input type="text" class="form-control" placeholder="State" />
-      </div>
-      <div class="col-4">
-        <input type="text" class="form-control" placeholder="Zip" />
+        <button type="button" class="btn btn-primary"  @click.prevent="saveUser">Add User</button>
       </div>
     </div>
   </div>
