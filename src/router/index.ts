@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import createExcercise from "../components/createexcercise/CreateExcercise.vue";
 import loginExcersice from "../components/loginexcersice/LoginExcersice.vue"
+import registerExcersice from "../components/registerexcersice/RegisterExcersice.vue"
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -13,6 +14,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/login',
     name: 'loginExcersice',
     component: loginExcersice
+  },
+  {
+    path: '/register',
+    name: 'registerExcersice',
+    component: registerExcersice
   },
 
 ]
