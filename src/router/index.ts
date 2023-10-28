@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import createExcercise from "../components/createexcercise/CreateExcercise.vue";
 import loginExcersice from "../components/loginexcersice/LoginExcersice.vue"
 import registerExcersice from "../components/registerexcersice/RegisterExcersice.vue"
-
+import createDesignation from "../components/createdesignation/CreateDesignation.vue"
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -19,6 +19,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/register',
     name: 'registerExcersice',
     component: registerExcersice
+  },
+  {
+    path: '/designation',
+    name: 'createDesignation',
+    component: createDesignation
   },
 
 ]

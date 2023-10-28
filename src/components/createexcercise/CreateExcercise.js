@@ -4,11 +4,10 @@ import axios from "axios";
 
 export default {
   name: "createExcercise",
- 
   data() {
     return {
-      baseUrl: `${process.env.VUE_APP_HOSTED_URL}api/users/`,                        // Hosted Url
-     // baseUrl: `${process.env.VUE_APP_LOCAL_URL}api/users/`,                       // Local Url
+      //baseUrl: `${process.env.VUE_APP_HOSTED_URL}api/users/`,                        // Hosted Url
+      baseUrl: `${process.env.VUE_APP_LOCAL_URL}api/users/`,                       // Local Url
       createUser: {
         username: ""
       },
