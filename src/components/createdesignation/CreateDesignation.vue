@@ -2,13 +2,13 @@
   <div class="center-container">
     <div class="container">
       <div class="col-4">
-        <input type="text" class="form-control" placeholder="Name" v-model="createname.name" maxlength="50"/>
+        <input type="text" class="form-control" placeholder="Name" v-model="createname.Name" maxlength="50"/>
       </div>
       <div>
-      <input type="text" class="form-control" placeholder="Description" v-model="createname.description" maxlength="50"/>
+      <input type="text" class="form-control" placeholder="Description" v-model="createname.Description" maxlength="50"/>
       </div>
       <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" v-model="createname.active">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" v-model="createname.Active">
   <label class="form-check-label" for="flexCheckIndeterminate">
     Active
   </label>

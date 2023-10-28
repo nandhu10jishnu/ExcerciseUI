@@ -9,9 +9,9 @@ export default {
       //baseUrl: `${process.env.VUE_APP_HOSTED_URL}api/designation/`,                        // Hosted Url
        baseUrl: `${process.env.VUE_APP_LOCAL_URL}api/designation/`,                       // Local Url
       createname: {
-        name: "",
-        description:"",
-        active:"",
+        Name: "",
+        Description:"",
+        Active:"",
       },
       idtoken: "",
       head: "",
@@ -29,7 +29,6 @@ export default {
   },
   methods: {
     async saveUser() {
-          alert(this.createname);
           await axios.post(this.baseUrl + `add`, this.createname, this.head
           )
               .then(res => {
@@ -41,12 +40,9 @@ export default {
               .catch(err => {
 
                   console.log("error in creating Designation", err.response.data.detail);
-                  if (err.response.data.errors.DomainValidations[0].includes("Designation is already taken")) {
-                      alert("A User with same User designation already exists.");
-                  }
-                  else {
+                  
                       alert(err.response.data.detail);
-                  }
+                  
               })
       }
   },
