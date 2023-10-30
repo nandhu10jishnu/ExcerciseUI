@@ -1,8 +1,21 @@
 <template>
-  <router-view/>
+ <!-- <router-view/> -->
+
+    <navbar />
+
 </template>
 
-<style lang="scss">
+<script>
+/* eslint-disable */
+import navbar from "./common/NavigationBar.vue";
+export default {
+  name: "App",
+  components: {
+    navbar,
+  }
+};
+</script>
+<!-- <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,4 +36,4 @@ nav {
     }
   }
 }
-</style>
+</style> -->

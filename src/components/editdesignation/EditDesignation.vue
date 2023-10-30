@@ -21,27 +21,4 @@
     </div>
   </template>
     <script src="../editdesignation/EditDesignation.js"></script>
-    <style>
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    display: flex;
-  }
-  
-  .col-4 {
-    flex: 1;
-    margin: 5px;
-  }
-  </style>
+   

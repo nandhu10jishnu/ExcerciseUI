@@ -28,7 +28,7 @@ export default {
     };
   },
   methods: {
-    async saveUser() {
+    async saveDesignation() {
           await axios.post(this.baseUrl + `add`, this.createname, this.head
           )
               .then(res => {
