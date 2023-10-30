@@ -9,7 +9,7 @@
                 <label>Password</label>
                 <input type="password" class="form-control form-control-lg" />
             </div>
-            <button type="submit" class="btn btn-dark btn-lg btn-block">LogIn</button>
+            <button type="submit" class="btn btn-dark btn-lg btn-block"  @click.prevent="loginclick">LogIn</button>
             <p class="forgot-password text-right mt-2 mb-4">
                 <router-link to="/">Forgot password ?</router-link>
             </p>

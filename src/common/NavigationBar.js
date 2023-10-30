@@ -1,12 +1,19 @@
+import { useStore } from "vuex";
+import { computed } from "vue";
 
-import { useRoute, useRouter } from "vue-router";
 
 export default {
   name: "navbar",
   setup() {
-    const router = useRouter();
-    const route = useRoute();
 
+    const store = useStore();
+
+    let getNavbarstatus = computed(() => {
+      return store.getters.getNavbarstatus;
+    });
+    return {
+      getNavbarstatus,
+    }
   },
 };
 

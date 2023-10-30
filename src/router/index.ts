@@ -4,15 +4,17 @@ import loginExcersice from "../components/loginexcersice/LoginExcersice.vue"
 import registerExcersice from "../components/registerexcersice/RegisterExcersice.vue"
 import createDesignation from "../components/createdesignation/CreateDesignation.vue"
 import EditDesignation from "../components/editdesignation/EditDesignation.vue"
+import ListDesignation from "../components/listdesignation/ListDesignation.vue"
+
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/createExcercise',
     name: 'createExcercise',
     component: createExcercise
   },
 
   {
-    path: '/login',
+    path: '/',
     name: 'loginExcersice',
     component: loginExcersice
   },
@@ -30,6 +32,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/updatedesignation/:dId',
     name: 'EditDesignation',
     component: EditDesignation
+  },
+  {
+    path: '/listdesignation',
+    name: 'ListDesignation',
+    component: ListDesignation
   },
 
 ]
