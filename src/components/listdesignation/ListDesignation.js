@@ -7,15 +7,17 @@ export default {
     return {
       //baseUrl: `${process.env.VUE_APP_HOSTED_URL}api/designation/`,                        // Hosted Url
        baseUrl: `${process.env.VUE_APP_LOCAL_URL}api/designation/`,                       // Local Url
-       employees: [
-        { name: 'John Doe', email: 'john@example.com' },
-        { name: 'Jane Smith', email: 'jane@example.com' },
-        { name: 'Bob Johnson', email: 'bob@example.com' }
-        ],
+       designationlist:"",
+       head: "",
     };
   },
   async mounted() {
- 
+    this.head = {
+      headers: {
+          "Content-Type": "application/json",
+      },
+  };
+ this.getallDesignation();
   },
   methods: {
     editEmployee(index) {
@@ -25,6 +27,23 @@ export default {
     deleteEmployee(index) {
         // Implement your delete logic here
        
-    }
+    },
+    async getallDesignation() {
+
+      await axios
+          .get(
+              this.baseUrl, this.head
+          )
+          .then((res) => {
+              console.log(" get designation", res);
+              this.designationlist = res.data;
+         
+          })
+          .catch((err) => {
+            console.log(err);
+            this.designationList =[]
+            alert("No data found!")
+          });
+  },
   },
 };
