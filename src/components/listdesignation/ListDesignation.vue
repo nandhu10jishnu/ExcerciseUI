@@ -18,8 +18,8 @@
                         <td><button class="btn btn-primary" @click="editEmployee(des.id)">Edit</button></td>
                         <td> <button class="btn btn-danger" @click="deleteEmployee(des.id)">Delete</button></td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
+                </tbody>             
+  </table>
+</div>
 </template>
 <script src="../listdesignation/ListDesignation.js"></script>
