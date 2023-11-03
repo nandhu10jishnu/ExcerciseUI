@@ -35,7 +35,8 @@ export default {
 
                   console.log("Designation  created successfully", res);
                 
-                  alert("Designation created successfully.")
+                  alert("Designation created successfully.");
+                  this.$router.push(`/listdesignation`);
               })
               .catch(err => {
 

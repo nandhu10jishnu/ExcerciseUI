@@ -15,7 +15,7 @@
   </div>
        
         <div class="col-4">
-          <button type="button" class="btn btn-primary"  @click.prevent="designationupdate">Edit Designation</button>
+          <button type="button" class="btn btn-primary"  @click.prevent="designationupdate">Update Designation</button>
         </div>
       </div>
     </div>

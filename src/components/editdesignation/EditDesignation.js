@@ -1,6 +1,6 @@
 /* eslint-disable */
 import axios from "axios";
-//import store from "../../store/index";
+import { useRouter } from "vue-router";
 
 export default {
   name: "EditDesignation",
@@ -41,6 +41,7 @@ export default {
                   console.log("Designation  updated successfully", res);
                 
                   alert("Designation updated successfully.")
+                  this.$router.push(`/listdesignation`);
               })
               .catch(err => {
 
