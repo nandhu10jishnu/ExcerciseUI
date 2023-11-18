@@ -5,12 +5,18 @@ import registerExcersice from "../components/registerexcersice/RegisterExcersice
 import createDesignation from "../components/createdesignation/CreateDesignation.vue"
 import EditDesignation from "../components/editdesignation/EditDesignation.vue"
 import ListDesignation from "../components/listdesignation/ListDesignation.vue"
-
+import CreateCountry from "../components/createcountry/CreateCountry.vue"
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/createExcercise',
     name: 'createExcercise',
     component: createExcercise
+  },
+
+  {
+    path: '/createCountry',
+    name: 'createCountry',
+    component: CreateCountry
   },
 
   {
