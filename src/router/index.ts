@@ -5,7 +5,7 @@ import registerExcersice from "../components/registerexcersice/RegisterExcersice
 import createDesignation from "../components/createdesignation/CreateDesignation.vue"
 import EditDesignation from "../components/editdesignation/EditDesignation.vue"
 import ListDesignation from "../components/listdesignation/ListDesignation.vue"
-
+import ListExcersice from "../components/listexcersice/ListExcersice.vue"
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/createExcercise',
@@ -37,6 +37,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/listdesignation',
     name: 'ListDesignation',
     component: ListDesignation
+  },
+  {
+    path: '/listExcercise',
+    name: 'ListExcercise',
+    component: ListExcersice
   },
 
 ]
