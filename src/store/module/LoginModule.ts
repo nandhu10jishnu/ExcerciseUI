@@ -1,12 +1,15 @@
 /* eslint-disable */
 const state = () => ({
-	
+	idToken:localStorage.getItem("idtoken"),
 	showNavbar: true,
 	showSideBar: true,
 	
 });
 
 const getters = {
+	getToken(state: { idToken: any }) {
+		return state.idToken;
+	},
 	getNavbarstatus(state: { showNavbar: any }) {
 		 return state.showNavbar;
          
@@ -17,6 +20,9 @@ const getters = {
 };
 
 const actions = {
+	async setToken({ commit }: any, data: any) {
+		commit("setToken", data);
+	},
 	async setNavbar({ commit }: any, data: any) {
 		commit("setNavbar", data);
 	},
@@ -26,6 +32,10 @@ const actions = {
 };
 
 const mutations = {
+	setToken(state: { idToken: any }, idTokenLog: any) {
+		state.idToken = idTokenLog;
+		localStorage.setItem("idtoken", idTokenLog);
+	},
 	setNavbar(state: { showNavbar: any }, shownavstatus: any) {
 		
 		state.showNavbar = shownavstatus;
