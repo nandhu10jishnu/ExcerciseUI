@@ -70,7 +70,7 @@ export default {
 
             console.log("Token", store.getters.getToken);
 
-            this.$router.push(`/listdesignation`);
+            this.$router.push(`/listcountry`);
 
           })
           .catch(err => {

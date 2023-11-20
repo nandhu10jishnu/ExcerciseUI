@@ -7,6 +7,8 @@ import EditDesignation from "../components/editdesignation/EditDesignation.vue"
 import ListDesignation from "../components/listdesignation/ListDesignation.vue"
 import ListExcersice from "../components/listexcersice/ListExcersice.vue"
 import CreateCountry from "../components/createcountry/CreateCountry.vue"
+import ListCountry from "../components/listcountry/ListCountry.vue"
+import EditCountry from "../components/editcountry/EditCountry.vue"
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/createExcercise',
@@ -49,6 +51,18 @@ const routes: Array<RouteRecordRaw> = [
     path: '/listExcercise',
     name: 'ListExcercise',
     component: ListExcersice
+  },
+
+  {
+    path: '/listcountry',
+    name: 'ListCountry',
+    component: ListCountry
+  },
+
+  {
+    path: '/updatecountry/:cId',
+    name: 'EditCountry',
+    component: EditCountry
   },
 
 ]

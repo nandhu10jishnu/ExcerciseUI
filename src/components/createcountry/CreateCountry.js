@@ -1,4 +1,5 @@
 import axios from "axios";
+import store from "../../store/index";
 export default {
     name: "CreateCountry",
     data() {
@@ -16,10 +17,10 @@ export default {
       };
     },
     async mounted() {
-        // this.idtoken = store.getters.getToken;
+         this.idtoken = store.getters.getToken;
          this.head = {
              headers: {
-                // Authorization: "Bearer " + this.idtoken,
+                 Authorization: "Bearer " + this.idtoken,
                  "Content-Type": "application/json",
              },
          };
@@ -33,6 +34,7 @@ export default {
                       console.log("Country  created successfully", res);
                     
                       alert("Country created successfully.");
+                      this.$router.push(`/listcountry`);
                       
                   })
                   .catch(err => {
