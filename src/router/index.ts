@@ -9,7 +9,13 @@ import ListExcersice from "../components/listexcersice/ListExcersice.vue"
 import CreateCountry from "../components/createcountry/CreateCountry.vue"
 import ListCountry from "../components/listcountry/ListCountry.vue"
 import EditCountry from "../components/editcountry/EditCountry.vue"
+import RegistartionPage from "../components/registrationpage/RegistrationPage.vue"
 const routes: Array<RouteRecordRaw> = [
+  {
+    path: '/registrationpage',
+    name: 'RegistartionPage',
+    component: RegistartionPage
+  },
   {
     path: '/createExcercise',
     name: 'createExcercise',
